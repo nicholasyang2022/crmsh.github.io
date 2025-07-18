@@ -40,8 +40,10 @@
 </div>
 <!--TOC-->
 <div id="toc">
-<div class="toclevel1"><a href="#topics.Description">Program description</a></div>
-<div class="toclevel1"><a href="#topics.CommandLine">Command line options</a></div>
+<div class="toclevel1"><a href="#_name">NAME</a></div>
+<div class="toclevel1"><a href="#_synopsis">SYNOPSIS</a></div>
+<div class="toclevel1"><a href="#topics.Description">DESCRIPTION</a></div>
+<div class="toclevel1"><a href="#topics.CommandLine">OPTIONS</a></div>
 <div class="toclevel1"><a href="#topics.Introduction">Introduction</a></div>
 <div class="toclevel2"><a href="#topics.Introduction.Interface">User interface</a></div>
 <div class="toclevel2"><a href="#topics.Introduction.Completion">Tab completion</a></div>
@@ -58,223 +60,235 @@
 <div class="toclevel2"><a href="#topics.Syntax.RuleExpressions">Syntax: Rule expressions</a></div>
 <div class="toclevel1"><a href="#topics.Lifetime">Lifetime parameter format</a></div>
 <div class="toclevel1"><a href="#topics.Reference">Command reference</a></div>
-<div class="toclevel3"><a href="#cmdhelp.root.status">status</a></div>
-<div class="toclevel3"><a href="#cmdhelp.root.verify">verify</a></div>
-<div class="toclevel2"><a href="#cmdhelp.cluster">cluster</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.copy">copy</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.diff">diff</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.disable">disable</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.enable">enable</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.geo_init">geo_init</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.geo_init_arbitrator">geo_init_arbitrator</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.geo_join">geo_join</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.health">health</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.init">init</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.join">join</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.remove">remove</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.crash_test">crash_test</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.restart">restart</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.rename">rename</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.run">run</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.start">start</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.status">status</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.stop">stop</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cluster.wait_for_startup">wait_for_startup</a></div>
-<div class="toclevel2"><a href="#cmdhelp.script">script</a></div>
-<div class="toclevel3"><a href="#cmdhelp.script.json">json</a></div>
-<div class="toclevel3"><a href="#cmdhelp.script.list">list</a></div>
-<div class="toclevel3"><a href="#cmdhelp.script.run">run</a></div>
-<div class="toclevel3"><a href="#cmdhelp.script.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.script.verify">verify</a></div>
-<div class="toclevel2"><a href="#cmdhelp.corosync">corosync</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.diff">diff</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.edit">edit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.get">get</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.log">log</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.pull">pull</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.push">push</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.reload">reload</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.set">set</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.status">status</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.link">link</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.link.show">link_show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.link.add">link_add</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.link.update">link_update</a></div>
-<div class="toclevel3"><a href="#cmdhelp.corosync.link.remove">link_remove</a></div>
-<div class="toclevel2"><a href="#cmdhelp.cib">cib</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.cibstatus">cibstatus</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.commit">commit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.delete">delete</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.diff">diff</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.import">import</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.list">list</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.new">new</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.reset">reset</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cib.use">use</a></div>
-<div class="toclevel2"><a href="#cmdhelp.ra">ra</a></div>
-<div class="toclevel3"><a href="#cmdhelp.ra.classes">classes</a></div>
-<div class="toclevel3"><a href="#cmdhelp.ra.info">info</a></div>
-<div class="toclevel3"><a href="#cmdhelp.ra.list">list</a></div>
-<div class="toclevel3"><a href="#cmdhelp.ra.providers">providers</a></div>
-<div class="toclevel3"><a href="#cmdhelp.ra.validate">validate</a></div>
-<div class="toclevel2"><a href="#cmdhelp.resource">resource</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.ban">ban</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.cleanup">cleanup</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.clear">clear</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.constraints">constraints</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.demote">demote</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.failcount">failcount</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.locate">locate</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.maintenance">maintenance</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.manage">manage</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.meta">meta</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.move">move</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.operations">operations</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.param">param</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.promote">promote</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.refresh">refresh</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.restart">restart</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.scores">scores</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.secret">secret</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.start">start</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.status">status</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.stop">stop</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.trace">trace</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.unmanage">unmanage</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.untrace">untrace</a></div>
-<div class="toclevel3"><a href="#cmdhelp.resource.utilization">utilization</a></div>
-<div class="toclevel2"><a href="#cmdhelp.sbd">sbd</a></div>
-<div class="toclevel3"><a href="#cmdhelp.sbd.configure">configure</a></div>
-<div class="toclevel3"><a href="#cmdhelp.sbd.device">device</a></div>
-<div class="toclevel3"><a href="#cmdhelp.sbd.status">status</a></div>
-<div class="toclevel3"><a href="#cmdhelp.sbd.purge">purge</a></div>
-<div class="toclevel2"><a href="#cmdhelp.node">node</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.attribute">attribute</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.clearstate">clearstate</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.delete">delete</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.fence">fence</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.maintenance">maintenance</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.online">online</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.ready">ready</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.server">server</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.standby">standby</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.status-attr">status-attr</a></div>
-<div class="toclevel3"><a href="#cmdhelp.node.utilization">utilization</a></div>
-<div class="toclevel2"><a href="#cmdhelp.site">site</a></div>
-<div class="toclevel3"><a href="#cmdhelp.site.ticket">ticket</a></div>
-<div class="toclevel2"><a href="#cmdhelp.options">options</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.add-quotes">add-quotes</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.check-frequency">check-frequency</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.check-mode">check-mode</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.colorscheme">colorscheme</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.editor">editor</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.manage-children">manage-children</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.output">output</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.pager">pager</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.reset">reset</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.save">save</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.set">set</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.skill-level">skill-level</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.sort-elements">sort-elements</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.user">user</a></div>
-<div class="toclevel3"><a href="#cmdhelp.options.wait">wait</a></div>
-<div class="toclevel2"><a href="#cmdhelp.configure">configure</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.acl_target">acl_target</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.alert">alert</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.bundle">bundle</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.cib">cib</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.cibstatus">cibstatus</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.clone">clone</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.colocation">colocation</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.commit">commit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.default-timeouts">default-timeouts</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.delete">delete</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.edit">edit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.erase">erase</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.fencing_topology">fencing_topology</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.filter">filter</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.get_property">get_property</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.graph">graph</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.group">group</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.load">load</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.location">location</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.modgroup">modgroup</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.monitor">monitor</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.node">node</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.op_defaults">op_defaults</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.order">order</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.primitive">primitive</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.property">property</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.ptest">ptest</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.refresh">refresh</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.rename">rename</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.role">role</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.rsc_defaults">rsc_defaults</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.rsc_template">rsc_template</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.rsc_ticket">rsc_ticket</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.rsctest">rsctest</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.save">save</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.schema">schema</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.set">set</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.tag">tag</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.template">template</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.upgrade">upgrade</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.user">user</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.validate_all">validate_all</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.verify">verify</a></div>
-<div class="toclevel3"><a href="#cmdhelp.configure.xml">xml</a></div>
-<div class="toclevel2"><a href="#cmdhelp.template">template</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.apply">apply</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.delete">delete</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.edit">edit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.list">list</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.load">load</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.new">new</a></div>
-<div class="toclevel3"><a href="#cmdhelp.template.show">show</a></div>
-<div class="toclevel2"><a href="#cmdhelp.cibstatus">cibstatus</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.load">load</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.node">node</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.op">op</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.origin">origin</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.quorum">quorum</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.run">run</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.save">save</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.simulate">simulate</a></div>
-<div class="toclevel3"><a href="#cmdhelp.cibstatus.ticket">ticket</a></div>
-<div class="toclevel2"><a href="#cmdhelp.assist">assist</a></div>
-<div class="toclevel3"><a href="#cmdhelp.assist.template">template</a></div>
-<div class="toclevel3"><a href="#cmdhelp.assist.weak-bond">weak-bond</a></div>
-<div class="toclevel2"><a href="#cmdhelp.maintenance">maintenance</a></div>
-<div class="toclevel3"><a href="#cmdhelp.maintenance.action">action</a></div>
-<div class="toclevel3"><a href="#cmdhelp.maintenance.off">off</a></div>
-<div class="toclevel3"><a href="#cmdhelp.maintenance.on">on</a></div>
-<div class="toclevel2"><a href="#cmdhelp.history">history</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.detail">detail</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.diff">diff</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.events">events</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.exclude">exclude</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.graph">graph</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.info">info</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.latest">latest</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.limit">limit</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.log">log</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.node">node</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.peinputs">peinputs</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.refresh">refresh</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.resource">resource</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.session">session</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.setnodes">setnodes</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.show">show</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.source">source</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.transition">transition</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.transitions">transitions</a></div>
-<div class="toclevel3"><a href="#cmdhelp.history.wdiff">wdiff</a></div>
-<div class="toclevel3"><a href="#cmdhelp.root.report">report</a></div>
+<div class="toclevel2"><a href="#cmdhelp.root.status"><span class="monospaced">status</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.root.verify"><span class="monospaced">verify</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.cluster"><span class="monospaced">cluster</span> - Cluster setup and management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.copy"><span class="monospaced">copy</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.diff"><span class="monospaced">diff</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.disable"><span class="monospaced">disable</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.enable"><span class="monospaced">enable</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.geo_init"><span class="monospaced">geo-init</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.geo_init_arbitrator"><span class="monospaced">geo-init-arbitrator</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.geo_join"><span class="monospaced">geo-join</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.health"><span class="monospaced">health</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.init"><span class="monospaced">init</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.join"><span class="monospaced">join</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.remove"><span class="monospaced">remove</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.crash_test"><span class="monospaced">crash_test</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.restart"><span class="monospaced">restart</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.rename"><span class="monospaced">rename</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.run"><span class="monospaced">run</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.start"><span class="monospaced">start</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.status"><span class="monospaced">status</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.stop"><span class="monospaced">stop</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cluster.wait_for_startup"><span class="monospaced">wait_for_startup</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.script"><span class="monospaced">script</span> - Cluster script management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.script.json"><span class="monospaced">json</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.script.list"><span class="monospaced">list</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.script.run"><span class="monospaced">run</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.script.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.script.verify"><span class="monospaced">verify</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.corosync"><span class="monospaced">corosync</span> - Corosync management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.diff"><span class="monospaced">diff</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.edit"><span class="monospaced">edit</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.get"><span class="monospaced">get</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.log"><span class="monospaced">log</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.pull"><span class="monospaced">pull</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.push"><span class="monospaced">push</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.reload"><span class="monospaced">reload</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.set"><span class="monospaced">set</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.status"><span class="monospaced">status</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.corosync.link"><span class="monospaced">link</span></a></div>
+<div class="toclevel4"><a href="#cmdhelp.corosync.link.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel4"><a href="#cmdhelp.corosync.link.add"><span class="monospaced">add</span></a></div>
+<div class="toclevel4"><a href="#cmdhelp.corosync.link.update"><span class="monospaced">update</span></a></div>
+<div class="toclevel4"><a href="#cmdhelp.corosync.link.remove"><span class="monospaced">remove</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.cib"><span class="monospaced">cib</span> - CIB shadow management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.cibstatus"><span class="monospaced">cibstatus</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.commit"><span class="monospaced">commit</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.delete"><span class="monospaced">delete</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.diff"><span class="monospaced">diff</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.import"><span class="monospaced">import</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.list"><span class="monospaced">list</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.new"><span class="monospaced">new</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.reset"><span class="monospaced">reset</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cib.use"><span class="monospaced">use</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.ra"><span class="monospaced">ra</span> - Resource Agents (RA) lists and documentation</a></div>
+<div class="toclevel3"><a href="#cmdhelp.ra.classes"><span class="monospaced">classes</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.ra.info"><span class="monospaced">info</span> (<span class="monospaced">meta</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.ra.list"><span class="monospaced">list</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.ra.providers"><span class="monospaced">providers</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.ra.validate"><span class="monospaced">validate</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.resource"><span class="monospaced">resource</span> - Resource management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.ban"><span class="monospaced">ban</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.cleanup"><span class="monospaced">cleanup</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.clear"><span class="monospaced">clear</span> (<span class="monospaced">unmove</span>, <span class="monospaced">unmigrate</span>, <span class="monospaced">unban</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.constraints"><span class="monospaced">constraints</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.demote"><span class="monospaced">demote</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.failcount"><span class="monospaced">failcount</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.locate"><span class="monospaced">locate</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.maintenance"><span class="monospaced">maintenance</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.manage"><span class="monospaced">manage</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.meta"><span class="monospaced">meta</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.move"><span class="monospaced">move</span> (<span class="monospaced">migrate</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.operations"><span class="monospaced">operations</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.param"><span class="monospaced">param</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.promote"><span class="monospaced">promote</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.refresh"><span class="monospaced">refresh</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.restart"><span class="monospaced">restart</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.scores"><span class="monospaced">scores</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.secret"><span class="monospaced">secret</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.start"><span class="monospaced">start</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.status"><span class="monospaced">status</span> (<span class="monospaced">show</span>, <span class="monospaced">list</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.stop"><span class="monospaced">stop</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.trace"><span class="monospaced">trace</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.unmanage"><span class="monospaced">unmanage</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.untrace"><span class="monospaced">untrace</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.resource.utilization"><span class="monospaced">utilization</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.sbd"><span class="monospaced">sbd</span> - SBD management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.sbd.configure"><span class="monospaced">configure</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.sbd.device"><span class="monospaced">device</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.sbd.status"><span class="monospaced">status</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.sbd.purge"><span class="monospaced">purge</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.node"><span class="monospaced">node</span> - Node management</a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.attribute"><span class="monospaced">attribute</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.clearstate"><span class="monospaced">clearstate</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.delete"><span class="monospaced">delete</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.fence"><span class="monospaced">fence</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.maintenance"><span class="monospaced">maintenance</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.online"><span class="monospaced">online</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.ready"><span class="monospaced">ready</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.server"><span class="monospaced">server</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.standby"><span class="monospaced">standby</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.status-attr"><span class="monospaced">status-attr</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.node.utilization"><span class="monospaced">utilization</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.site"><span class="monospaced">site</span> - GEO clustering site support</a></div>
+<div class="toclevel3"><a href="#cmdhelp.site.ticket"><span class="monospaced">ticket</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.options"><span class="monospaced">options</span> - User preferences</a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.add-quotes"><span class="monospaced">add-quotes</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.check-frequency"><span class="monospaced">check-frequency</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.check-mode"><span class="monospaced">check-mode</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.colorscheme"><span class="monospaced">colorscheme</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.editor"><span class="monospaced">editor</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.manage-children"><span class="monospaced">manage-children</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.output"><span class="monospaced">output</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.pager"><span class="monospaced">pager</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.reset"><span class="monospaced">reset</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.save"><span class="monospaced">save</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.set"><span class="monospaced">set</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.skill-level"><span class="monospaced">skill-level</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.sort-elements"><span class="monospaced">sort-elements</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.user"><span class="monospaced">user</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.options.wait"><span class="monospaced">wait</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.configure"><span class="monospaced">configure</span> - CIB configuration</a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.acl_target"><span class="monospaced">acl_target</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.alert"><span class="monospaced">alert</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.bundle"><span class="monospaced">bundle</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.cib"><span class="monospaced">cib</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.cibstatus"><span class="monospaced">cibstatus</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.clone"><span class="monospaced">clone</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.colocation"><span class="monospaced">colocation</span> (<span class="monospaced">collocation</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.commit"><span class="monospaced">commit</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.default-timeouts"><span class="monospaced">default-timeouts</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.delete"><span class="monospaced">delete</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.edit"><span class="monospaced">edit</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.erase"><span class="monospaced">erase</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.fencing_topology"><span class="monospaced">fencing_topology</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.filter"><span class="monospaced">filter</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.get_property"><span class="monospaced">get-property</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.graph"><span class="monospaced">graph</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.group"><span class="monospaced">group</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.load"><span class="monospaced">load</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.location"><span class="monospaced">location</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.modgroup"><span class="monospaced">modgroup</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.monitor"><span class="monospaced">monitor</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.node"><span class="monospaced">node</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.op_defaults"><span class="monospaced">op_defaults</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.order"><span class="monospaced">order</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.primitive"><span class="monospaced">primitive</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.property"><span class="monospaced">property</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.ptest"><span class="monospaced">ptest</span> (<span class="monospaced">simulate</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.refresh"><span class="monospaced">refresh</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.rename"><span class="monospaced">rename</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.role"><span class="monospaced">role</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.rsc_defaults"><span class="monospaced">rsc_defaults</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.rsc_template"><span class="monospaced">rsc_template</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.rsc_ticket"><span class="monospaced">rsc_ticket</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.rsctest"><span class="monospaced">rsctest</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.save"><span class="monospaced">save</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.schema"><span class="monospaced">schema</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.set"><span class="monospaced">set</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.tag"><span class="monospaced">tag</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.template"><span class="monospaced">template</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.upgrade"><span class="monospaced">upgrade</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.user"><span class="monospaced">user</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.validate_all"><span class="monospaced">validate-all</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.verify"><span class="monospaced">verify</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.configure.xml"><span class="monospaced">xml</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.template"><span class="monospaced">template</span> - Import configuration from templates</a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.apply"><span class="monospaced">apply</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.delete"><span class="monospaced">delete</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.edit"><span class="monospaced">edit</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.list"><span class="monospaced">list</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.load"><span class="monospaced">load</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.new"><span class="monospaced">new</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.template.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.cibstatus"><span class="monospaced">cibstatus</span> - CIB status management and editing</a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.load"><span class="monospaced">load</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.node"><span class="monospaced">node</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.op"><span class="monospaced">op</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.origin"><span class="monospaced">origin</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.quorum"><span class="monospaced">quorum</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.run"><span class="monospaced">run</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.save"><span class="monospaced">save</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.simulate"><span class="monospaced">simulate</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.cibstatus.ticket"><span class="monospaced">ticket</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.assist"><span class="monospaced">assist</span> - Configuration assistant</a></div>
+<div class="toclevel3"><a href="#cmdhelp.assist.template"><span class="monospaced">template</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.assist.weak-bond"><span class="monospaced">weak-bond</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.maintenance"><span class="monospaced">maintenance</span> - Maintenance mode commands</a></div>
+<div class="toclevel3"><a href="#cmdhelp.maintenance.action"><span class="monospaced">action</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.maintenance.off"><span class="monospaced">off</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.maintenance.on"><span class="monospaced">on</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.history"><span class="monospaced">history</span> - Cluster history</a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.detail"><span class="monospaced">detail</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.diff"><span class="monospaced">diff</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.events"><span class="monospaced">events</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.exclude"><span class="monospaced">exclude</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.graph"><span class="monospaced">graph</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.info"><span class="monospaced">info</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.latest"><span class="monospaced">latest</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.limit"><span class="monospaced">limit</span> (<span class="monospaced">timeframe</span>)</a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.log"><span class="monospaced">log</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.node"><span class="monospaced">node</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.peinputs"><span class="monospaced">peinputs</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.refresh"><span class="monospaced">refresh</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.resource"><span class="monospaced">resource</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.session"><span class="monospaced">session</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.setnodes"><span class="monospaced">setnodes</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.show"><span class="monospaced">show</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.source"><span class="monospaced">source</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.transition"><span class="monospaced">transition</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.transitions"><span class="monospaced">transitions</span></a></div>
+<div class="toclevel3"><a href="#cmdhelp.history.wdiff"><span class="monospaced">wdiff</span></a></div>
+<div class="toclevel2"><a href="#cmdhelp.root.report"><span class="monospaced">report</span></a></div>
+<div class="toclevel2"><a href="#_span_class_monospaced_end_span_span_class_monospaced_cd_span_span_class_monospaced_up_span"><span class="monospaced">end</span> (<span class="monospaced">cd</span>, <span class="monospaced">up</span>)</a></div>
+<div class="toclevel2"><a href="#_span_class_monospaced_help_span"><span class="monospaced">help</span></a></div>
+<div class="toclevel2"><a href="#_span_class_monospaced_quit_span_span_class_monospaced_exit_span_span_class_monospaced_bye_span"><span class="monospaced">quit</span> (<span class="monospaced">exit</span>, <span class="monospaced">bye</span>)</a></div>
+<div class="toclevel1"><a href="#_files">FILES</a></div>
+<div class="toclevel2"><a href="#_etc_crm_profiles_yml">/etc/crm/profiles.yml</a></div>
+<div class="toclevel3"><a href="#_purpose">Purpose</a></div>
+<div class="toclevel3"><a href="#_syntax">Syntax</a></div>
+<div class="toclevel3"><a href="#_how_the_content_of_the_file_is_interpreted">How the content of the file is interpreted</a></div>
+<div class="toclevel1"><a href="#_bugs">BUGS</a></div>
+<div class="toclevel1"><a href="#_authors">AUTHORS</a></div>
+<div class="toclevel1"><a href="#_see_also">SEE ALSO</a></div>
+<div class="toclevel1"><a href="#_copying">COPYING</a></div>
 </div>
 <div id="container">
 <div id="content">
